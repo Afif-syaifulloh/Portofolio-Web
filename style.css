@@ -1,0 +1,530 @@
+body {
+  font-family: sans-sarif;
+  margin: 0;
+  padding: 0;
+  /* background-image: linear-gradient(160deg, #21b7e6, #bb3841, #e11919); */
+  background: #000000 !important;
+  color: #fff;
+}
+
+
+header {
+  /* background-color: #3e6de4;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 25px; */
+   background-color: #e60012; /* merah Persona 5 */
+  padding: 20px;
+  font-size: 20px;
+  /* font-weight: 700; */
+  box-shadow: 0 6px 0 #000;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  /* padding-right: 170px; */
+  padding-left: 170px;
+}
+
+/* nav a {
+  color: white;
+} */
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd600 !important; /* kuning saat hover */
+  text-shadow: 2px 2px 0 #000;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 900px;
+}
+
+.hello h1 {
+  font-size: 6vw;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: -100%; /* mulai dari luar layar */
+  left: 20%;
+  animation: drop 2s ease-out forwards;
+}
+
+@keyframes drop {
+  0% {
+    top: -100%;
+  }
+  70% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.intro h1 {
+  color: rgb(245, 232, 164);
+}
+
+.intro p {
+  color: white;
+}
+
+.deskripsi-container {
+  padding-top: 20px;
+  padding-bottom: 200px;
+}
+
+.deskripsi {
+  width: 900px;
+  /* border: 6px solid #535354;
+  border-radius: 25px;
+  background-color: gray; */
+  padding-left: 10px;
+}
+
+.deskripsi h1 {
+  font-size: 70px;
+  color: orange;
+}
+
+.deskripsi p {
+  color: white;
+  font-size: x-large;
+}
+
+.btn-cv {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #e60012; /* merah persona */
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transform: skew(-20deg); /* bikin jajar genjang */
+  box-shadow: 6px 6px 0px #000; /* shadow tebel hitam */
+  transition: all 0.5s ease;
+
+  
+}
+
+/* .btn-cv span {
+  display: inline-block;
+  transform: skew(20deg); balikin teks biar lurus
+} */
+
+
+.btn-cv:hover {
+  background: #ffd600; /* kuning pas hover */
+  color: #000;
+  transform: skew(-20deg) translateY(-5px) scale(1.05); 
+  box-shadow: 10px 10px 0px #000; /* shadow makin jauh = comical */
+}
+
+/* .btn-cv.show {
+  opacity: 1;
+  transform: skew(-20deg) translateY(0);
+  transition: all 0.8s cubic-bezier(0.68,-0.55,0.27,1.55) 0.3s; 
+  ↑ 0.3s itu delay;
+} */
+
+/* ===== Persona 5 Card Style ===== */
+#skills {
+  padding: 60px 0;
+  background: #000; /* background hitam biar kontras */
+}
+
+#skills h1 {
+  color: #ffd600; /* kuning Persona */
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 #e60012; /* shadow merah */
+  margin-bottom: 40px;
+}
+
+/* Card */
+#skills .card {
+  background: linear-gradient(135deg, #000 0%, #e60012 100%);
+  border: 3px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 6px 6px 0 #000;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Hover efek comical */
+#skills .card:hover {
+  transform: rotate(-2deg) translateY(-10px) scale(1.05);
+  box-shadow: 12px 12px 0 #000;
+}
+
+/* Icon */
+#skills .card i {
+  color: #ffd600; /* kuning */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-shadow: 3px 3px 0 #000;
+}
+
+/* Card Title */
+#skills .card-title {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* Card Text */
+#skills .card-text {
+  color: #f8f8f8 !important;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Overlay Button */
+#skills .card-overlay {
+  text-align: center;
+  padding: 15px;
+}
+
+#skills .card-overlay .btn {
+  background: #e60012;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 #000;
+  transform: skew(-10deg);
+  transition: 0.3s ease;
+}
+
+#skills .card-overlay .btn:hover {
+  background: #ffd600;
+  color: #000;
+  box-shadow: 8px 8px 0 #000;
+  transform: skew(-10deg) translateY(-5px);
+}
+
+
+.skill {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+  padding: 40px;
+}
+
+.skill:nth-child(1) { animation-delay: 0.2s; }
+.skill:nth-child(2) { animation-delay: 0.4s; }
+.skill:nth-child(3) { animation-delay: 0.6s; }
+.skill:nth-child(4) { animation-delay: 0.8s; }
+.skill:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi keluar ke atas */
+.fadeOutUp {
+  animation: fadeOutUp 0.8s ease forwards;
+}
+
+@keyframes fadeOutUp {
+   from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(237, 245, 237);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.message.show {
+  opacity: 1;
+}
+
+#project h1{
+  color: #ffd600; /* kuning Persona */
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 #e60012; /* shadow merah */
+  margin-bottom: 40px;
+}
+
+/* Card */
+#project .card {
+  background: linear-gradient(135deg, #000 0%, #e60012 100%);
+  border: 3px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 6px 6px 0 #000;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* Hover efek comical */
+#project .card:hover {
+  transform: rotate(-2deg) translateY(-10px) scale(1.05);
+  box-shadow: 12px 12px 0 #000;
+}
+
+/* Card Title */
+#project .card-title {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000;
+}
+
+/* Card Text */
+#project .card-text {
+  color: #f8f8f8 !important;
+  font-size: 16px;
+  text-align: center;
+}
+
+#project h6{
+  color: #f8f8f8 !important;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Overlay Button */
+#project .card-overlay {
+  text-align: center;
+  padding: 15px;
+}
+
+#project .card-overlay .btn {
+  background: #e60012;
+  border: 3px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0 #000;
+  transform: skew(-10deg);
+  transition: 0.3s ease;
+}
+
+#project .card-overlay .btn:hover {
+  background: #ffd600;
+  color: #000;
+  box-shadow: 8px 8px 0 #000;
+  transform: skew(-10deg) translateY(-5px);
+}
+
+.project{
+  padding-bottom: 300px;
+}
+
+.form-container {
+  max-width: 200px;
+  /* max-height: 400px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+  /* padding-top: 10px; */
+  /* background-color: #615f5f; */
+  border-radius: 8px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* flex-direction:row ; */
+}
+
+
+button {
+  margin-left: 60px;
+  background-color: #4b4b4c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-image {
+  text-align: right;
+}
+
+footer {
+  max-height: 200px;
+  background-color: #333;
+  margin-top: 30px;
+  padding-bottom: 98px;
+  /* text-align: center; */
+  color: white;
+  /* display: flex; */
+}
+
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  /* margin: 30px; */
+}
+
+.social-media {
+  margin-right: 30px;
+}
+
+.content1-container {
+  color: orange;
+  background-color: #5187c0fe;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.content1-container img {
+  width: 700;
+  height: 300px;
+}
+
+.content2-container {
+  color: orange;
+  background-color: #5187c0fe;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.content2-container img {
+  width: 700;
+  height: 300px;
+}
+
+
+.main-content{
+ /* background-color: #e4a43e; */
+ padding-bottom: 300px;
+}
+
+.nav-link {
+  color: rgba(11, 11, 11, 0.8) !important; 
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffffff !important; /* putih saat hover */
+}
+
+.main-content {
+  display: flex;       /* bikin horizontal */
+  flex-wrap: wrap;     /* biar otomatis turun kalau kepanjangan */
+  gap: 20px;           /* jarak antar item */
+  justify-content: center; /* rata tengah */
+}
+
+.skill {
+  text-align: center;
+}
+
+#scrollTopBtn {
+  display: none; /* awalnya disembunyikan */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 14px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #121212; /* gelap ala Persona */
+  overflow: hidden; /* sembunyikan teks keluar container */
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+/* Teks yang bergerak */
+.moving-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ffd600;
+  padding-left: 100%; /* mulai di luar kanan */
+  /* background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5); */
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  animation: moveText 10s linear infinite;
+}
+
+/* Animasi bergerak dari kiri ke kanan */
+@keyframes moveText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.padding {
+  padding-bottom: 190px;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  /* background: #1e293b;
+  color: #f8fafc; */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
