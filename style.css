@@ -1,5 +1,5 @@
 body {
-  font-family: sans-sarif;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   /* background-image: linear-gradient(160deg, #21b7e6, #bb3841, #e11919); */
@@ -92,7 +92,7 @@ nav li {
 }
 
 .deskripsi {
-  width: 350px;
+  width: 650px;
   /* border: 6px solid #535354;
   border-radius: 25px;
   background-color: gray; */
@@ -411,7 +411,7 @@ footer {
 }
 
 .content1-container img {
-  width: 700;
+  width: 700px;
   height: 300px;
 }
 
@@ -493,9 +493,6 @@ footer {
   font-size: 1.8rem;
   color: #ffd600;
   padding-left: 100%; /* mulai di luar kanan */
-  /* background: linear-gradient(90deg, #ff3cac, #784ba0, #2b86c5); */
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
   animation: moveText 10s linear infinite;
 }
 
@@ -529,3 +526,12 @@ footer {
   box-shadow: 0 15px 30px rgba(0,0,0,0.5);
 }
 
+@media (max-width: 430px) {
+  .deskripsi {
+    width: 100%;       /* penuh lebar layar HP */
+    max-width: 360px;  /* biar nggak kepanjangan */
+    margin: 0 auto;    /* rata tengah */
+    padding: 0 15px;   /* kasih ruang kanan-kiri */
+    text-align: center;
+  }
+}
