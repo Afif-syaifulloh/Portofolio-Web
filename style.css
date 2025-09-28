@@ -149,6 +149,7 @@ nav li {
 #skills {
   padding: 60px 0;
   background: #000; /* background hitam biar kontras */
+  padding-bottom: 300px;
 }
 
 #skills h1 {
