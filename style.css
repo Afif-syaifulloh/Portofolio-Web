@@ -14,7 +14,7 @@ header {
   padding-top: 20px;
   font-size: 25px; */
    background-color: #e60012; /* merah Persona 5 */
-  padding: 20px;
+  /* padding: 20px; */
   font-size: 20px;
   /* font-weight: 700; */
   box-shadow: 0 6px 0 #000;
@@ -27,7 +27,7 @@ nav ul {
 nav li {
   display: inline-block;
   /* padding-right: 170px; */
-  padding-left: 170px;
+  padding-left: 20px;
 }
 
 /* nav a {
@@ -92,7 +92,7 @@ nav li {
 }
 
 .deskripsi {
-  width: 900px;
+  width: 350px;
   /* border: 6px solid #535354;
   border-radius: 25px;
   background-color: gray; */
