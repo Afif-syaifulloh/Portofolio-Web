@@ -534,4 +534,22 @@ footer {
     padding: 0 15px;   /* kasih ruang kanan-kiri */
     text-align: center;
   }
+
+  .card {
+    width: 100%;       /* full layar HP */
+    max-width: 360px;  /* biar pas di iPhone */
+    margin: 10px auto; /* tengah */
+  }
+
+  .card img {
+    width: 100%;       /* ikuti lebar card */
+    height: auto;      /* proporsi gambar aman */
+  }
+
+
+  .card .card-text {
+    font-size: 14px;   /* kecilin teks biar muat */
+    text-align: center;
+    padding: 10px;
+  }
 }
