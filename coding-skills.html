@@ -1,38 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel ="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coding skills page</title>
+
+    <!-- CSS LAMA KAMU -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tambahan styling khusus card + grid TANPA Bootstrap -->
+    <style>
+      /* Grid 2 kolom untuk card project */
+      .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      /* Card style (mirip Bootstrap tapi versi custom) */
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background: #fff;
+        overflow: hidden;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-body {
+        padding: 15px;
+      }
+
+      .card-title {
+        margin: 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .card-subtitle {
+        margin-top: 2px;
+        color: gray;
+        font-size: 14px;
+      }
+
+      .card-text {
+        margin-top: 10px;
+        font-size: 15px;
+      }
+
+      /* ----- BUTTON MIRIP BOOTSTRAP ----- */
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-size: 16px;
+        line-height: 1.5;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        transition: 0.2s;
+        user-select: none;
+      }
+
+      /* Warna tombol primary */
+      .btn-primary {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+      }
+
+      .btn-primary:active {
+        background-color: #0a58ca;
+        border-color: #0a53be;
+        transform: scale(0.98);
+      }
+
+      /* Disabled */
+      .btn:disabled {
+        opacity: 0.65;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li type="none"><a href="index.html">HOME</a></li>
-                <!-- <li type="none"><a href="contact.html">CONTACT</a></li>
-                <li type="none"><a href="my-website.html">MY WEBSITE</a></li>
-                <li type="none"><a href="hobbies.html">HOBBIES</a></li> -->
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li type="none"><a href="index.html">HOME</a></li>
+        </ul>
+      </nav>
     </header>
+
     <main>
-    <div class="padding">
-        <h1>jangan deh diklik logonya</h1>
+      <div class="padding">
+        <h1 style="color: aliceblue">coba klik logonya</h1>
+
         <div class="main-content">
-        <div class="skill">
-            <img src="source gambar/html-5.png" alt="html logo" />
+          <div class="skill">
+            <img src="source gambar/html-5.png" />
             <p>HTML</p>
           </div>
+
           <div class="skill">
             <img src="source gambar/css-3.png" />
             <p>CSS</p>
           </div>
+
           <div class="skill">
             <img src="source gambar/js.png" />
             <p>JS</p>
           </div>
+
           <div class="skill">
             <img src="source gambar/c.png" />
             <p>C++</p>
@@ -42,30 +134,128 @@
             <img src="source gambar/icons8-github-logo-64.png" />
             <p>Github</p>
           </div>
+
           <div class="skill">
             <img src="source gambar/icons8-sql-64.png" />
             <p>SQL</p>
           </div>
+
           <div class="skill">
             <img src="source gambar/icons8-bootstrap-64.png" />
-            <p>Bootsrap</p>
+            <p>Bootstrap</p>
           </div>
+
           <div class="skill">
             <img src="source gambar/icons8-flask-64.png" />
             <p>Flask</p>
           </div>
+
           <div class="message" id="finalMessage">
             yaaay kamu mengklik semuanya :v
           </div>
         </div>
-    </div>
+      </div>
 
-    <footer class="footer">
-    <div class="moving-text">
-        Muhammad Afif Syaifulloh – Open for Internship & Collaboration
+      <!-- ================================= -->
+      <!-- PROJECT SECTION (2 KOLOM TANPA BOOTSTRAP) -->
+      <!-- ================================= -->
 
-    </div>
-    </footer>
-     <script src="animation.js"></script>
-</body>
+      <section id="project" class="project">
+        <h1>MY project</h1>
+
+        <div class="project-grid">
+          <div class="card">
+            <img src="source gambar/Screenshot (312).png" />
+            <div class="card-body">
+              <h5 class="card-title">revoU codingcamp</h5>
+              <h6 class="card-subtitle">HTML,CSS,JS,BOOTSTRAP</h6>
+              <p class="card-text">
+                ini adalah tugas projek dari salah satu coding camp yang saya
+                kerjakan
+              </p>
+            </div>
+            <div class="card-overlay">
+              <a
+                href="https://afif-syaifulloh.github.io/RevoU/"
+                class="btn btn-warning"
+                target="_blank"
+                >Klik untuk liat projek</a
+              >
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 mb-5 me-3">
+              <img
+                src="source gambar/Screenshot 2024-08-02 184507.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">MUSIC WEBSITE PROJECT</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                  Figma,HTML,CSS,JavaScript
+                </h6>
+                <p class="card-text">
+                  projek ini merupakan projek replika dari spotify dibuat
+                  menggunakan figma,html,css, dan java script projek ini
+                  merupakan salah satu projek dari kampus.
+                </p>
+              </div>
+              <div class="card-overlay">
+                <a
+                  href="https://afif-syaifulloh.github.io/website-pertamaax/"
+                  class="btn btn-warning"
+                  target="_blank"
+                  >Klik untuk liat projek</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="source gambar/Screenshot 2024-12-25 151111.png" />
+            <div class="card-body">
+              <h5 class="card-title">TEBAK TEBAKAN GAME (Charguessr)</h5>
+              <h6 class="card-subtitle">
+                Figma,HTML,CSS,JavaScript,Python,json
+              </h6>
+              <p class="card-text">
+                projek ini merupakan projek untuk mata kuliah ai, dibuat dengan
+                sistem rule based ai dimana ai dapat belajar dari sistem atau
+                aturan yang dibuat.
+              </p>
+              <div class="card-overlay">
+                <a
+                  href="https://AfifSyaifulloh7.pythonanywhere.com"
+                  class="btn btn-warning"
+                  target="_blank"
+                  >Klik untuk liat projek</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="source gambar/Screenshot 2025-11-02 172402.png" />
+            <div class="card-body">
+              <h5 class="card-title">Media Care Ui/UX</h5>
+              <h6 class="card-subtitle">Figma</h6>
+              <p class="card-text">
+                prototype website kesehatan seperti halo doc
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="moving-text">
+          Muhammad Afif Syaifulloh – Open for Internship & Collaboration
+        </div>
+      </footer>
+    </main>
+
+    <script src="animation.js"></script>
+  </body>
 </html>
